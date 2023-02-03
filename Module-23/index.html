@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumiya</title>
+</head>
+<body>
+    
+    <p></p>
+
+
+    <script>
+        function sumiYa(jan){
+    const store = [];
+    for (let i = 0; i < jan.length; i++) {
+        const element = jan[i];
+        if (store.includes(element) === false) {
+            store.push(jan)
+        }
+    }
+    return store;
+}
+
+let myDear = ['sumiya', 'sumiya', 'sumiya' , 'Mehjabin' , 'Sumiya', 'Mahrin', 'Mustari', 'SSumiya'];
+let sumu = sumiYa(myDear);
+    </script>
+</body>
+</html>
