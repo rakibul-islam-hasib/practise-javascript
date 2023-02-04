@@ -3,5 +3,10 @@
  */
 
 function centimeterToMeter(centimeter){
-    
+    var local = 100; 
+    let myMetter  =  centimeter / local ;
+    return myMetter ; 
 }
+
+let sent = centimeterToMeter(500)
+console.log(sent);
