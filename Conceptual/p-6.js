@@ -31,4 +31,28 @@ const soManyMen = [
 
 ]; 
 
+function whoYou(getArray){
+    // if(getArray)
+    // console.log(getArray);
+    let small = getArray[0].age;
+   for (let i = 0; i < getArray.length; i++) {
+    
+    
+    const element = getArray[i];
+    // console.log(element);
+    // if(element.age > getArray[i].age){
+    //     small = element ; 
+    // }
+    let smallest = element.age ; 
+    // console.log(element.age); 
+    if (smallest < small) {
+        small = element  ; 
+    }
 
+   }
+//    return small ; 
+}
+
+let sentValue = whoYou(soManyMen);
+
+// console.log(sentValue);
