@@ -14,10 +14,10 @@ function publicBusFare(people){
     let microBusCapacity = 11 ; 
     let publicBusFare = 250 ; 
     let remainingPeople  = people % busCapacity ; 
+    let remainingPeopleFromMicro = remainingPeople % microBusCapacity ;
     if(remainingPeople === 0 ){
         return 0 ; 
     }
-    let remainingPeopleFromMicro = remainingPeople % microBusCapacity ;
     if(remainingPeopleFromMicro === 0){
         return 0 ; 
     }
@@ -28,7 +28,7 @@ function publicBusFare(people){
  
 }
 
-let result = publicBusFare(112); 
+let result = publicBusFare(111); 
 
 // let demo = 117%50 ; 
 console.log(result);
