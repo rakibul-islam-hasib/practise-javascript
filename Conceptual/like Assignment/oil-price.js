@@ -21,4 +21,5 @@ function oilPrice(prm1 , prm2 , prm3 ){
      return totalPrice ; 
 }
 
-let output = 
+let output = oilPrice(0,2,3); 
+console.log(output);

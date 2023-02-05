@@ -6,9 +6,10 @@ const objName = [
 
     {name:'sahid', age:50},
 
-    {name:'samin', age:10}
+    {name:'samin', age:100}
 
 ]; 
+
 
 
 function myFunction(nameArray){
@@ -16,15 +17,16 @@ function myFunction(nameArray){
     for (let i = 0; i < nameArray.length; i++) {
         const element = nameArray[i];
         // console.log(element.age);
-        if(element[i].age > store){
-            store = element.age ; 
+        if(element.age < store.age){
+            store = element ; 
         }
         
     }
-    console.log(store);
+    // console.log(store);
+    return store ;
 }
 
 var uou = myFunction(objName); 
-// console.log(uou);
+console.log(uou);
 
 
