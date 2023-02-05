@@ -5,9 +5,12 @@
 4. রিটার্ন করার সময় তোমাকে দশমিক এর পর দুই ঘর রিটার্ন করতে হবে।
 */
 function radianToDegree(radian){
-    let oneRedian = 57.296 ; 
+    let oneRedian = 57.2958; 
     let toDegree = radian * oneRedian ; 
-    console.log(toDegree.toFixed(2));
+    // console.log(toDegree.toFixed(2));
+    let output = toDegree.toFixed(2); 
+    return output ; 
 }
 
-radianToDegree(1);
+let myOutput = radianToDegree(25); // 1. if valu 10 out = 572.96 , 2. if value is 25 output is 1432.39 ; 
+console.log(myOutput);
