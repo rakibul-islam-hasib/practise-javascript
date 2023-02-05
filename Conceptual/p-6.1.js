@@ -1,4 +1,4 @@
-const soManyMen = [
+const objName = [
 
     {name:'sakib', age:30},
 
@@ -16,7 +16,7 @@ function myFunction(nameArray){
     for (let i = 0; i < nameArray.length; i++) {
         const element = nameArray[i];
         // console.log(element.age);
-        if(element[i].age < store){
+        if(element[i].age > store){
             store = element.age ; 
         }
         
@@ -24,7 +24,7 @@ function myFunction(nameArray){
     console.log(store);
 }
 
-var uou = myFunction(soManyMen); 
+var uou = myFunction(objName); 
 // console.log(uou);
 
 

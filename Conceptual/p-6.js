@@ -27,7 +27,7 @@ const soManyMen = [
 
     {name:'sahid', age:50},
 
-    {name:'samin', age:10}
+    {name:'samin', age:100}
 
 ]; 
 

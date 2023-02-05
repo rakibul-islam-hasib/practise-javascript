@@ -9,3 +9,13 @@ function numbers(nNumber) {
 
 let number = numbers(50);
 console.log(number);
+
+
+
+/* 
+function secondLargest(array) {
+  array.sort(function (a, b) {
+    return b - a;
+  });
+  return array[1];
+} */
