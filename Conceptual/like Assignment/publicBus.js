@@ -10,10 +10,25 @@
 7. মোট কতটাকা পাবলিক বাস ফেয়ারে যাবে সেটি তোমাকে রিটার্ন করবে ।*/
 
 function publicBusFare(people){
-    let basCapacity = 50 ; 
+    let busCapacity = 50 ; 
     let microBusCapacity = 11 ; 
+    let publicBusFare = 250 ; 
+    let remainingPeople  = people % busCapacity ; 
+    if(remainingPeople === 0 ){
+        return 0 ; 
+    }
+    let remainingPeopleFromMicro = remainingPeople % microBusCapacity ;
+    if(remainingPeopleFromMicro === 0){
+        return 0 ; 
+    }
+    else{
+        return remainingPeopleFromMicro * publicBusFare ;
+    }
     
+ 
 }
 
-let demo = 117%50 ; 
-console.log(demo);
+let result = publicBusFare(112); 
+
+// let demo = 117%50 ; 
+console.log(result);
