@@ -3,7 +3,7 @@
 // var numArray = [140000, 104, 99];
 var numArray = [140000, 104, 84 ,  99 , 1500];
 var shorted =  numArray.sort(function(a, b) { // a , b একটা প্যারামিটার নিতে হবে । আমি যে কোনো অক্ষর নিতে পারি । 
-  return b - a ; // এইখানে আমি যদি b - a দেই তাহলে আমাকে বড় থেকে ছোট দেখাবে । এবং 
+  return b - a ; // এইখানে আমি যদি b - a দেই তাহলে আমাকে বড় থেকে ছোট দেখাবে । এবং যদি a - b দেই তাহলে আমাকে ছোট থেকে বড় দেখাবে 
 });
  let some = numArray.length - 2; 
 console.log(shorted[1]);
